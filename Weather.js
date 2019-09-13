@@ -15,7 +15,19 @@ const styles = StyleSheet.create({
 })
 
 Weather.propTypes = {
-  temp: PropTypes.number.isRequired
+  temp: PropTypes.number.isRequired,
+  condition: PropTypes.oneOf([
+    "Thunderstorm",
+    "Drizzle",
+    "Rain",
+    "Snow",
+    "Atmosphere",
+    "Clear",
+    "Clouds",
+    "Haze",
+    "Mist",
+    "Dust"
+  ])
 }
 
 export default Weather;
